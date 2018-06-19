@@ -13,20 +13,35 @@
 
 <body>
 
-<header>
+<header class="header">
     <div class="bg-video">
-        <video class="bg-video__element" autoplay muted loop>
-            
+        <video class="bg-video__element" id="myVideo" autoplay muted loop>
+            <source src="videos/Top_Highway.mp4" type="video/mp4">
+            <source src="videos/Top_Highway.webm" type="video/webm">
         </video>
     </div>
+    
+    <div class="header__logo-box">
+        <img src="images/logo.png" alt="Vacanza_logo" class="header__logo-box-icon">
+    </div>
+    
+    <div class="header__text">
+        VACANZA'18
+    </div>
+    
 </header>
+<script>
+var vid = document.getElementById("myVideo");
+    vid.playbackRate = 0.7;
+
+</script>
 <main>
     <section class="rounds">
         Rounds
     </section>
 </main>
 <footer>
-    Rounds
+    Footer
 </footer>
 </body>
 
