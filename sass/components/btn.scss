@@ -1,0 +1,50 @@
+.btn {
+    padding: 0.6rem 1rem;
+
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    display: inline-block;
+    transition: all 0.3s;
+    &-round1 {
+        background: $color-grey-dark-2;
+    }
+
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &-rules,
+    &-quiz,
+    &-rules:visited,
+    &-quiz:visited,
+    &-rules:link,
+    &-quiz:link {
+        margin: 0 2rem;
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+        border: 2px solid white;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+        
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+    &-rules:hover .header__buttons-icon,
+    &-quiz:hover .header__buttons-icon {
+        transform: translateX(1rem);
+        width: 2rem;
+    }
+
+}
+
+.header__buttons-icon {
+    width: 0rem;
+    height: 2rem;
+    fill: #fff;
+    transition: all 0.3s;
+     
+}

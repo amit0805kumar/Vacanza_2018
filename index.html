@@ -5,44 +5,71 @@
 <head>
     <meta name="viewport" content="width=width-device initial-scale=1">
     <meta charset="utf-8">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,800|Raleway:300,400,700,800|Roboto:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
 
 <body>
 
-<header class="header">
-    <div class="bg-video">
-        <video class="bg-video__element" id="myVideo" autoplay muted loop>
+    <header class="header">
+        <div class="bg-video">
+            <video class="bg-video__element" id="myVideo" autoplay muted loop>
             <source src="videos/Top_Highway.mp4" type="video/mp4">
             <source src="videos/Top_Highway.webm" type="video/webm">
         </video>
-    </div>
-    
-    <div class="header__logo-box">
-        <img src="images/logo.png" alt="Vacanza_logo" class="header__logo-box-icon">
-    </div>
-    
-    <div class="header__text">
-        VACANZA'18
-    </div>
-    
-</header>
-<script>
-var vid = document.getElementById("myVideo");
-    vid.playbackRate = 0.7;
+        </div>
 
-</script>
-<main>
-    <section class="rounds">
-        Rounds
-    </section>
-</main>
+        <div class="header__logo-box">
+            <img src="images/logo.png" alt="Vacanza_logo" class="header__logo-box-icon">
+        </div>
+
+        <div class="header__text">
+            VACANZA'18
+        </div>
+        <div class="header__buttons">
+            <a href="#" class="btn btn-rules">REGISTER
+                <svg class="header__buttons-icon">
+                        <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
+                </svg>
+            </a>
+            <a href="#" class="btn btn-quiz">START QUIZ
+             <svg class="header__buttons-icon">
+                        <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
+             </svg>
+            </a>
+        </div>
+
+
+
+    </header>
+    <script>
+        var vid = document.getElementById("myVideo");
+        vid.playbackRate = 0.7;
+    </script>
+    <main>
+        <section class="rounds">
+            <div class="rounds__right">
+                <div class="rounds__right-content">
+                    <h2 class="rounds__right-heading">round 1</h2>
+                    <p class="rounds__right-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sint tempora quibusdam quidem architecto quod ea sequi fugiat voluptate dignissimos iusto, expedita atque nulla libero, deleniti voluptatibus! Pariatur debitis, omnis.
+                    </p>
+                    <div class="btn btn-round1">RULES</div>
+
+                </div>
+                <div class="rounds__right-img-box">
+                    <div class="rounds__right-img-box-image"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 
 <footer>
-    Footer
-</footer>
+    
+</footer>-->
+
 </body>
 
 </html>
