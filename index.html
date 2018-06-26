@@ -16,17 +16,17 @@
     <header class="header">
         <div class="bg-video">
             <video class="bg-video__element" id="myVideo" autoplay muted loop>
-            <source src="videos/Top_Highway.mp4" type="video/mp4">
-            <source src="videos/Top_Highway.webm" type="video/webm">
-        </video>
+                <source src="videos/video.mp4" type="video/mp4">
+             <!--   <source src="videos/Top_Highway.webm" type="video/webm">-->
+            </video>
         </div>
 
         <div class="header__logo-box">
             <img src="images/logo.png" alt="Vacanza_logo" class="header__logo-box-icon">
         </div>
 
-        <div class="header__text">
-            VACANZA'18
+        <div class="header__text-logo">
+            <img src="images/vac.svg" alt="text-logo">
         </div>
         <div class="header__buttons">
             <a href="#" class="btn btn-rules">REGISTER
@@ -46,7 +46,7 @@
     </header>
     <script>
         var vid = document.getElementById("myVideo");
-        vid.playbackRate = 0.7;
+        vid.playbackRate = 0.5;
     </script>
 
 
@@ -101,10 +101,27 @@
             </div>
         </section>
     </main>
-    <!-- 
-<footer>
-    
-</footer>-->
+   
+<footer class="footer">
+     <div class="footer__logos"> 
+            <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" target="_blank" class="social">
+                <svg class="social__icon">
+                        <use xlink:href="images/sprite.svg#icon-youtube"></use>
+                </svg>
+            </a>
+             <a href="https://www.instagram.com/csi_akgec/" target="_blank" class="social">
+                <svg class="social__icon">
+                        <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+             <a href="https://www.facebook.com/csi.akg/" target="_blank" class="social">
+                <svg class="social__icon">
+                        <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                </svg>
+            </a>
+        </div>
+     <div class="footer__legal">&copy; CSI:AKGEC 2018</div>
+</footer>
 
 </body>
 

@@ -11,7 +11,7 @@
     &__logo-box {
         width: 22rem;
         height: 22rem;
-        margin-top: 5rem;
+     //   margin-top: 5rem;
         opacity: 0.9;  
         &-icon {
             width: 22rem;
@@ -24,13 +24,14 @@
 
     }
  
-    &__text {
+    &__text-logo {
+  /*     
         font-size: 8rem;
         color: #fff;
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 700;
         transition: all 0.5s;
-        &::after {
+       &::after {
             content: "";
             background: #fff;
             width: 0;
@@ -49,6 +50,12 @@
         &:hover {
             cursor: pointer;
             letter-spacing: 2px;
+        }*/
+        
+         width: 47%; 
+         margin-top: 2rem;
+        &:hover{
+            cursor: pointer;
         }
     }
     
