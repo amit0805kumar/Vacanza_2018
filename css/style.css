@@ -116,6 +116,53 @@ a {
   background: #eeeeee;
   padding: 5rem 8rem; }
 
+.popup {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2005;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup__container {
+    max-width: 70rem;
+    height: 60rem;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 4rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    position: relative; }
+  .popup__close {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 66.7rem;
+    top: 1.2rem; }
+  .popup .cancel-icon, .popup .rules-icon {
+    width: 2rem;
+    height: 2rem; }
+  .popup .rules-icon {
+    fill: #fff;
+    margin-right: 0.5rem; }
+  .popup__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    background: #00695c;
+    display: flex;
+    color: #fff;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    letter-spacing: 2px;
+    align-items: center; }
+
 .bg-video {
   display: block;
   width: 100%;
@@ -230,7 +277,8 @@ a {
     border: 1px solid #004d40;
     transition: all 0.1s;
     color: #004d40;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    text-decoration: none; }
     .btn-round1:hover, .btn-round1:visited:hover, .btn-round1:link:hover {
       background: #004d40;
       color: #fff;
@@ -300,7 +348,6 @@ a {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: -13rem;
-    transition: all 0.1s ease-in-out;
     background: black;
     opacity: 0.7;
     padding: 0.6rem 1.2rem;
@@ -309,6 +356,16 @@ a {
     font-weight: 200;
     font-size: 2rem;
     letter-spacing: 2px; }
+    .nav__link-box-1 {
+      transition: margin 0.2s ease-in-out 0.12s; }
+    .nav__link-box-2 {
+      transition: margin 0.2s ease-in-out 0.08s; }
+    .nav__link-box-3 {
+      transition: margin 0.2s ease-in-out 0.04s; }
+    .nav__link-box-4 {
+      transition: margin 0.2s ease-in-out 0s; }
+    .nav__link-box:hover {
+      opacity: 0.9; }
   .nav__links:link, .nav__links:active, .nav__links {
     text-decoration: none;
     color: #fff; }
