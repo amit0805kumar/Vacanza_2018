@@ -13,12 +13,37 @@
 
 <body>
 
+
     <header class="header">
+        <div class="nav">
+            <div class="nav__logo"><a href="https://csiakgec.in/" target="_blank" class="csi">CSI</a></div>
+            <div class="nav__content">
+               
+                <input type="checkbox" class="nav__checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="nav__icon">
+                   <span class="nav__bar">&nbsp;</span>
+                </label>
+               
+                <div class="nav__link-box">
+                    <a href="#" class="nav__links">Home</a>
+                </div>
+                <div class="nav__link-box">
+                    <a href="#" class="nav__links">Rounds</a>
+                </div>
+                <div class="nav__link-box">
+                    <a href="#" class="nav__links">Quizzes</a>
+                </div>
+                <div class="nav__link-box">
+                    <a href="#" class="nav__links">Contact Us</a>
+                </div>
+
+            </div>
+        </div>
         <div class="bg-video">
-            <video class="bg-video__element" id="myVideo" autoplay muted loop>
+           <!-- <video class="bg-video__element" id="myVideo" autoplay muted loop>
                 <source src="videos/video.mp4" type="video/mp4">
-             <!--   <source src="videos/Top_Highway.webm" type="video/webm">-->
-            </video>
+               <source src="videos/Top_Highway.webm" type="video/webm">
+            </video>-->
         </div>
 
         <div class="header__logo-box">
@@ -41,12 +66,11 @@
             </a>
         </div>
 
-
-
     </header>
     <script>
         var vid = document.getElementById("myVideo");
         vid.playbackRate = 0.5;
+
     </script>
 
 
@@ -71,7 +95,7 @@
                 <div class="rounds__left-img-box">
                     <div class="rounds__left-img-box-image"></div>
                 </div>
-                
+
                 <div class="rounds__left-content">
                     <h2 class="rounds__left-heading">round 2</h2>
 
@@ -101,27 +125,27 @@
             </div>
         </section>
     </main>
-   
-<footer class="footer">
-     <div class="footer__logos"> 
+
+    <footer class="footer">
+        <div class="footer__logos">
             <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" target="_blank" class="social">
                 <svg class="social__icon">
                         <use xlink:href="images/sprite.svg#icon-youtube"></use>
                 </svg>
             </a>
-             <a href="https://www.instagram.com/csi_akgec/" target="_blank" class="social">
+            <a href="https://www.instagram.com/csi_akgec/" target="_blank" class="social">
                 <svg class="social__icon">
                         <use xlink:href="images/sprite.svg#icon-instagram"></use>
                 </svg>
             </a>
-             <a href="https://www.facebook.com/csi.akg/" target="_blank" class="social">
+            <a href="https://www.facebook.com/csi.akg/" target="_blank" class="social">
                 <svg class="social__icon">
                         <use xlink:href="images/sprite.svg#icon-facebook"></use>
                 </svg>
             </a>
         </div>
-     <div class="footer__legal">&copy; CSI:AKGEC 2018</div>
-</footer>
+        <div class="footer__legal">&copy; CSI:AKGEC 2018</div>
+    </footer>
 
 </body>
 

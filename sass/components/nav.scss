@@ -1,0 +1,117 @@
+.nav {
+    font-size: 2.2rem;
+    position: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2000;
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    &__logo {
+        letter-spacing: 3px;
+        height: 3rem;
+        .csi{
+            text-decoration: none;
+            color: #fff;
+            
+        }
+    }
+
+    &__content {
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        align-items: center;
+        height: 3rem;
+        margin-right: 5rem;
+        transition: all 0.3s ease-in-out;
+
+    }
+    &__link-box {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: -13rem;
+        transition: all 0.1s ease-in-out;
+        background: black;
+        opacity: 0.7;
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    &__links:link,
+    &__links:active,
+    &__links {
+        text-decoration: none;
+        color: #fff;
+    }
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+        background: #fff;
+        border-radius: 100px;
+        margin-left: 2rem;
+        position: absolute;
+        left: 94%;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+         transition: all 0.1s ease-in-out;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+      &__icon:hover &__bar:before{
+        top:-0.7rem;
+    }
+    
+    &__icon:hover &__bar:after{
+       top:0.7rem;
+    }
+    &__checkbox {
+        display: none;
+    }
+    &__checkbox:checked ~ &__link-box {
+        margin-top: 0;
+    }
+    &__checkbox:checked + &__icon &__bar{
+        background-color: transparent;
+    }
+    
+    &__checkbox:checked + &__icon &__bar::before{
+        top:0;
+        transform: rotate(135deg) ;
+    }
+    &__checkbox:checked + &__icon &__bar::after{
+        top:0;
+    transform: rotate(-135deg);
+    }
+    &__bar {
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        position: relative;
+        &,
+        &::before,
+        &::after {
+            content: "";
+            width: 1.8rem;
+            height: 2px;
+            display: inline-block;
+             transition: all 0.1s ease-in-out;
+            background: $color-grey-dark-1;
+        }
+        &::before {
+            top: -5px;
+            position: absolute;
+            left: 0;
+        }
+        &::after {
+            position: absolute;
+            top: 5px;
+            left: 0;
+        }
+    }
+
+}

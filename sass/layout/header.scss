@@ -5,13 +5,13 @@
     height: 90vh; //justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+   // justify-content: center;
     &__content {}
 
     &__logo-box {
         width: 22rem;
         height: 22rem;
-     //   margin-top: 5rem;
+       margin-top: 5rem;
         opacity: 0.9;  
         &-icon {
             width: 22rem;
