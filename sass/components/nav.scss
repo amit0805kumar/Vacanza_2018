@@ -10,9 +10,7 @@
     width: 100%;
     margin-top: 1rem;
     
-        @include respond(phone){
-           flex-direction: column; 
-        }
+       
     &__logo {
         letter-spacing: 3px;
         height: 3rem;
@@ -50,7 +48,7 @@
         font-weight: 200;
         font-size: 2rem;
         letter-spacing: 2px;
-        
+        z-index: 200;
         @include respond(phone){
             
             margin: 0;
@@ -58,24 +56,22 @@
             margin-right: -4rem;
             transform: translateY(5rem);
             opacity: 0;
-         
+            height: 0;
+            font-size: 0;
+            padding: 0;
         }
         
         &-1{
-            transition: margin 0.2s ease-in-out 0.12s,
-                        opacity 0.2s ease-in-out 0.12s;
+            transition: all 0.2s ease-in-out 0.12s;
         }
         &-2{
-            transition: margin 0.2s ease-in-out 0.08s,
-                        opacity 0.2s ease-in-out 0.12s;
+            transition: all 0.2s ease-in-out 0.08s;
         }
         &-3{    
-            transition: margin 0.2s ease-in-out 0.04s,
-                        opacity 0.2s ease-in-out 0.12s;
+            transition: all 0.2s ease-in-out 0.04s;
         }
         &-4{
-            transition: margin 0.2s ease-in-out 0s,
-                        opacity 0.2s ease-in-out 0.12s;
+            transition: all 0.2s ease-in-out 0s;
         }
         &:hover{
             opacity: 0.9;
@@ -97,15 +93,23 @@
         left: 95.5%;
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
          transition: all 0.1s ease-in-out;
+        z-index: 210;
         &:hover{
             cursor: pointer;
         }
+       
         @include respond(tab-port){
             left: 94.5%;
         }
         @include respond(phone-land){
             left: 93%;
         }
+        @include respond(small){
+            left: 91%;
+        }
+        
+  
+       
     }
       &__icon:hover &__bar:before{
         top:-0.7rem;
@@ -116,6 +120,7 @@
     }
     &__checkbox {
         display: none;
+    
     }
     
     /////////////////////
@@ -125,6 +130,9 @@
             margin-top: 0.8rem;
             margin-right: -4rem;
             opacity: 1;
+            height: 10rem;
+            font-size: 2rem;
+            padding: 0.6rem 1.2rem;
         }
     }
     
@@ -154,6 +162,7 @@
             display: inline-block;
              transition: all 0.1s ease-in-out;
             background: $color-grey-dark-1;
+  
         }
         &::before {
             top: -5px;

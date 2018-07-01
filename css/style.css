@@ -426,9 +426,6 @@ a {
   padding: 1rem 2rem;
   width: 100%;
   margin-top: 1rem; }
-  @media only screen and (max-width: 37.5em) {
-    .nav {
-      flex-direction: column; } }
   .nav__logo {
     letter-spacing: 3px;
     height: 3rem; }
@@ -459,22 +456,26 @@ a {
     text-transform: uppercase;
     font-weight: 200;
     font-size: 2rem;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    z-index: 200; }
     @media only screen and (max-width: 37.5em) {
       .nav__link-box {
         margin: 0;
         margin-top: -2rem;
         margin-right: -4rem;
         transform: translateY(5rem);
-        opacity: 0; } }
+        opacity: 0;
+        height: 0;
+        font-size: 0;
+        padding: 0; } }
     .nav__link-box-1 {
-      transition: margin 0.2s ease-in-out 0.12s, opacity 0.2s ease-in-out 0.12s; }
+      transition: all 0.2s ease-in-out 0.12s; }
     .nav__link-box-2 {
-      transition: margin 0.2s ease-in-out 0.08s, opacity 0.2s ease-in-out 0.12s; }
+      transition: all 0.2s ease-in-out 0.08s; }
     .nav__link-box-3 {
-      transition: margin 0.2s ease-in-out 0.04s, opacity 0.2s ease-in-out 0.12s; }
+      transition: all 0.2s ease-in-out 0.04s; }
     .nav__link-box-4 {
-      transition: margin 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0.12s; }
+      transition: all 0.2s ease-in-out 0s; }
     .nav__link-box:hover {
       opacity: 0.9; }
   .nav__links:link, .nav__links:active, .nav__links {
@@ -488,7 +489,8 @@ a {
     position: absolute;
     left: 95.5%;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-    transition: all 0.1s ease-in-out; }
+    transition: all 0.1s ease-in-out;
+    z-index: 210; }
     .nav__icon:hover {
       cursor: pointer; }
     @media only screen and (max-width: 56.25em) {
@@ -497,6 +499,9 @@ a {
     @media only screen and (max-width: 46.875em) {
       .nav__icon {
         left: 93%; } }
+    @media only screen and (max-width: 31.25em) {
+      .nav__icon {
+        left: 91%; } }
   .nav__icon:hover .nav__bar:before {
     top: -0.7rem; }
   .nav__icon:hover .nav__bar:after {
@@ -509,7 +514,10 @@ a {
       .nav__checkbox:checked ~ .nav__link-box {
         margin-top: 0.8rem;
         margin-right: -4rem;
-        opacity: 1; } }
+        opacity: 1;
+        height: 10rem;
+        font-size: 2rem;
+        padding: 0.6rem 1.2rem; } }
   .nav__checkbox:checked + .nav__icon .nav__bar {
     background-color: transparent; }
   .nav__checkbox:checked + .nav__icon .nav__bar::before {
