@@ -6,11 +6,61 @@
     padding: 0px;
      box-sizing: inherit;
 }
+
+
+//Media query Manager
+
+@mixin respond($breakpoint) {
+  
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 37.5em) {  //600px
+            @content
+        }
+    }
+  @if $breakpoint==phone-land {
+        @media only screen and (max-width: 46.875em) {  //750px
+            @content
+        }
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {  //900
+            @content
+        }
+    }
+
+    @if $breakpoint==tab {
+        @media only screen and (max-width: 68.75em) {    //1100
+            @content
+        }
+    }
+    
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {    //1200
+            @content
+        }
+    }
+    
+    @if $breakpoint==big-desk {
+        @media only screen and (min-width: 112.5em) {       //1800px
+            @content
+        }
+    }
+
+}
+
 html
 {
     font-size: 62.5%;
     font-family: 'Roboto',sans-serif;
     color: $color-grey-dark-1;
+    
+    @include respond(tab-land){
+        font-size: 50%; //8px=1rem;
+    }
+     @include respond(phone){
+        font-size: 43.75%; //7px=1rem;
+    }
 }
 body
 {

@@ -6,27 +6,32 @@
     position: relative;
     display: flex;
     margin-bottom: 5rem;
-    &-content { 
-        padding: 2rem;      
-        height: 30rem;
-        display: flex; 
+    z-index: 10;
+   
+    
+    &-content {
+        padding: 2rem;
+        min-height: 30rem;
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
+        z-index: 15;
     }
-    &-heading{
+    &-heading {
         text-transform: uppercase;
         border-bottom: 1px solid $color-grey-light-2;
-        font-size: 2.2rem;
-      //  margin-bottom: 1rem;
+        font-size: 2.2rem; //  margin-bottom: 1rem;
         color: $color-grey-dark-1;
         font-weight: 400;
     }
-    &-paragraph{
+    &-paragraph {
         color: $color-grey-dark-3;
-        font-size: 1.8rem;
-      //  margin: 3rem 0;
-        font-weight: 300; 
+        font-size: 1.8rem; //  margin: 3rem 0;
+        font-weight: 300;
         line-height: 3rem;
+        @include respond(phone) {
+         color: black;
+        }
     }
     &-img-box {
         flex: 0 1 50%;
@@ -35,10 +40,19 @@
             width: 100%;
             height: 100%;
             background-image: url(../images/r1.jpg);
-            clip-path: polygon(50% 0,100% 0,100% 100%,0 100%); 
+            clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
             background-repeat: no-repeat;
-            background-size: cover; 
+            background-size: cover;
             opacity: 0.7;
+            @include respond(tab-port) {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        @include respond(tab-port) {
+            flex: 0 1 100%;
+        }
+        @include respond(phone) {
+            flex: 0 0 0%;
         }
     }
 }
@@ -51,29 +65,30 @@
     position: relative;
     display: flex;
     margin-bottom: 5rem;
-    
-    &-content { 
-        padding: 2rem;      
+ z-index: 10;
+    &-content {
+        padding: 2rem;
         height: 30rem;
-        display: flex; 
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
+ z-index: 15;
     }
-    &-heading{
+    &-heading {
         text-transform: uppercase;
         border-bottom: 1px solid $color-grey-light-2;
         font-size: 2.2rem;
-      //  margin-bottom: 1rem;
         color: $color-grey-dark-1;
         font-weight: 400;
     }
-    &-paragraph{
+    &-paragraph {
         color: $color-grey-dark-3;
         font-size: 1.8rem;
-      //  margin: 3rem 0;
-        font-weight: 300; 
+        font-weight: 300;
         line-height: 3rem;
+        @include respond(phone) {
+         color: black;
+        }
     }
     &-img-box {
         flex: 0 1 50%;
@@ -82,11 +97,76 @@
             width: 100%;
             height: 100%;
             background-image: url(../images/r1.jpg);
-            clip-path: polygon(0 0,50% 0,100% 100%,0 100%); 
+            clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
             background-repeat: no-repeat;
-            background-size: cover; 
+            background-size: cover;
             opacity: 0.7;
+            @include respond(tab-port) {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        @include respond(tab-port) {
+            flex: 0 1 100%;
+        }
+        @include respond(phone) {
+            flex: 0 0 0%;
         }
     }
 }
-  
+
+.round {
+    &-1-image {
+         &::before{
+        content:"";
+        width: 100%;
+        height: 100%;
+        z-index: 11;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        @include respond(phone){
+       background-image:url(../images/r1.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            opacity: 0.3;
+        }
+    }
+    }
+    &-2-image { 
+        &::before{
+        content:"";
+        width: 100%;
+        height: 100%;
+        z-index: 11;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        @include respond(phone){
+       background-image:url(../images/r1.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            opacity: 0.3;
+        }
+    }
+    }
+    &-3-image { 
+        &::before{
+        content:"";
+        width: 100%;
+        height: 100%;
+        z-index: 11;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        @include respond(phone){
+       background-image:url(../images/r1.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            opacity: 0.3;
+        }
+    }
+    }
+}

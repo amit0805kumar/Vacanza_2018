@@ -11,7 +11,7 @@
     &__logo-box {
         width: 22rem;
         height: 22rem;
-       margin-top: 5rem;
+        margin-top: 5rem;
         opacity: 0.9;  
         &-icon {
             width: 22rem;
@@ -20,6 +20,10 @@
             &:hover {
                 transform: scale(1.1) rotate(720deg);
             }
+        }
+        
+        @include  respond(tab-land){
+            margin-top: 13rem;
         }
 
     }
@@ -53,7 +57,12 @@
         }*/
         
          width: 47%; 
-         margin-top: 2rem;
+         margin:2rem 0;
+        
+        @include respond(tab-port){
+            margin:4rem 0;
+            width: 55%;
+        }
         &:hover{
             cursor: pointer;
         }
@@ -61,7 +70,7 @@
     
     &__buttons
     {
-        margin-top: 2rem;
+        
         display: flex;
         align-items: center; 
   
