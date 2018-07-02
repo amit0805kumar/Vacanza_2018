@@ -45,7 +45,7 @@ a {
       .header__logo-box {
         margin-top: 13rem; } }
   .header__text-logo {
-  /*     
+        /*     
         font-size: 8rem;
         color: #fff;
         font-family: 'Nunito Sans', sans-serif;
@@ -82,6 +82,203 @@ a {
   .header__buttons {
     display: flex;
     align-items: center; }
+
+.quiz-header {
+  position: relative;
+  width: 100%;
+  padding: 4rem 0;
+  background: #fff;
+  display: block; }
+  .quiz-header__box {
+    border: 1rem solid #00695c;
+    padding: 2rem 5.5rem;
+    display: inline-block;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5); }
+    .quiz-header__box::before {
+      content: "";
+      position: absolute;
+      border: 1rem solid #3f3c3d;
+      top: 0rem;
+      left: 0rem;
+      width: 100%;
+      height: 100%;
+      transform: scale(1.1); }
+  .quiz-header__heading {
+    text-transform: uppercase;
+    font-size: 6rem; }
+
+.quiz-heading {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  position: relative;
+  margin: 3rem 0;
+  transition: all 0.3s; }
+  .quiz-heading:hover::after {
+    width: 80%; }
+  .quiz-heading::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 0.6rem;
+    background: #525050;
+    border-radius: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    transition: all 0.3s; }
+
+.section-quiz {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 10rem;
+  align-items: center; }
+
+.series {
+  background: #e0e0e0;
+  padding: 2rem;
+  margin: 2rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .series {
+      margin: 1.5rem;
+      padding: 2.5rem; } }
+  .series__friends, .series__stranger {
+    margin: 1rem 0;
+    background: red;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    position: relative;
+    background: #eeeeee; }
+    .series__friends-text, .series__stranger-text {
+      padding: 0rem;
+      color: #3f3c3d;
+      flex: 1;
+      text-align: center;
+      margin: 3rem 0;
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 2000; }
+      @media only screen and (max-width: 56.25em) {
+        .series__friends-text, .series__stranger-text {
+          margin: 2rem 0;
+          padding: 3rem; } }
+    .series__friends-image, .series__stranger-image {
+      width: 40rem;
+      height: 40rem;
+      margin-left: auto;
+      background-image: url(../images/r1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media only screen and (max-width: 56.25em) {
+        .series__friends-image, .series__stranger-image {
+          width: 30rem;
+          height: 30rem; } }
+    .series__friends::before, .series__stranger::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid black;
+      transform: scale(0.9);
+      z-index: 1000; }
+  .series__paragraph {
+    padding: 0 4rem;
+    font-size: 1.5rem;
+    line-height: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .series__paragraph {
+        padding: 0 3.2rem;
+        line-height: 2rem;
+        font-size: 1rem;
+        font-weight: 300; } }
+  .series__heading {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 3px; }
+    @media only screen and (max-width: 56.25em) {
+      .series__heading {
+        font-size: 2rem;
+        letter-spacing: 2px; } }
+
+.sports {
+  background: #e0e0e0;
+  padding: 2rem;
+  margin: 2rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .sports {
+      margin: 1.5rem;
+      padding: 2.5rem; } }
+  .sports__cricket, .sports__footbal {
+    margin: 1rem 0;
+    background: red;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    position: relative;
+    background: #eeeeee; }
+    .sports__cricket-text, .sports__footbal-text {
+      padding: 0rem;
+      color: #3f3c3d;
+      flex: 1;
+      text-align: center;
+      margin: 3rem 0;
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 2000; }
+      @media only screen and (max-width: 56.25em) {
+        .sports__cricket-text, .sports__footbal-text {
+          margin: 2rem 0;
+          padding: 3rem; } }
+    .sports__cricket-image, .sports__footbal-image {
+      width: 40rem;
+      height: 40rem;
+      margin-left: auto;
+      background-image: url(../images/r1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media only screen and (max-width: 56.25em) {
+        .sports__cricket-image, .sports__footbal-image {
+          width: 30rem;
+          height: 30rem; } }
+    .sports__cricket::before, .sports__footbal::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid black;
+      transform: scale(0.9);
+      z-index: 1000; }
+  .sports__paragraph {
+    padding: 0 4rem;
+    font-size: 1.5rem;
+    line-height: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .sports__paragraph {
+        padding: 0 3.2rem;
+        line-height: 2rem;
+        font-size: 1rem; } }
+  .sports__heading {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 3px; }
+    @media only screen and (max-width: 56.25em) {
+      .sports__heading {
+        font-size: 2rem;
+        letter-spacing: 2px; } }
 
 .footer {
   background: #00695c;
@@ -358,9 +555,8 @@ a {
   border: none;
   display: inline-block;
   transition: all 0.3s; }
-  .btn-round1, .btn-round1:visited, .btn-round1:link {
+  .btn-round1, .btn-round1:visited, .btn-round1:link, .btn-startQuiz, .btn-startQuiz:visited, .btn-startQuiz:link {
     background: #525050;
-    align-self: flex-start;
     border-radius: 3px;
     font-size: 1.5rem;
     font-weight: 400;
@@ -371,14 +567,16 @@ a {
     color: #004d40;
     letter-spacing: 1px;
     text-decoration: none; }
-    .btn-round1:hover, .btn-round1:visited:hover, .btn-round1:link:hover {
+    .btn-round1:hover, .btn-round1:visited:hover, .btn-round1:link:hover, .btn-startQuiz:hover, .btn-startQuiz:visited:hover, .btn-startQuiz:link:hover {
       background: #004d40;
       color: #fff;
       transform: translateY(-2px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
-    .btn-round1:active, .btn-round1:visited:active, .btn-round1:link:active {
+    .btn-round1:active, .btn-round1:visited:active, .btn-round1:link:active, .btn-startQuiz:active, .btn-startQuiz:visited:active, .btn-startQuiz:link:active {
       transform: translateY(2px);
       background: #00695c; }
+  .btn-round1, .btn-round1:visited, .btn-round1:link {
+    align-self: flex-start; }
   .btn:hover {
     cursor: pointer; }
   .btn-rules, .btn-quiz, .btn-rules:visited, .btn-quiz:visited, .btn-rules:link, .btn-quiz:link {
