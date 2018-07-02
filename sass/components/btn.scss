@@ -25,6 +25,10 @@
         letter-spacing: 1px;
         text-decoration: none;
 
+        @include respond(tab-port){
+            font-size: 1rem;
+            padding: 1rem 1.5rem;
+        }
         &:hover {
             background: $color-primary-dark;
             color: #fff;

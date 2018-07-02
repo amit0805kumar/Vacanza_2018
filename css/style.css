@@ -106,9 +106,25 @@ a {
       width: 100%;
       height: 100%;
       transform: scale(1.1); }
+      @media only screen and (max-width: 31.25em) {
+        .quiz-header__box::before {
+          border: 0.6rem solid #3f3c3d; } }
+    @media only screen and (max-width: 31.25em) {
+      .quiz-header__box {
+        padding: 1.5rem 4.5rem;
+        border: 0.6rem solid #004d40; } }
   .quiz-header__heading {
     text-transform: uppercase;
     font-size: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .quiz-header__heading {
+        font-size: 5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .quiz-header__heading {
+        font-size: 4.5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .quiz-header__heading {
+        font-size: 3.8rem; } }
 
 .quiz-heading {
   text-transform: uppercase;
@@ -136,6 +152,9 @@ a {
   flex-direction: column;
   padding: 3rem 10rem;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .section-quiz {
+      padding: 3rem 7rem; } }
 
 .series {
   background: #e0e0e0;
@@ -153,6 +172,10 @@ a {
     justify-content: flex-start;
     position: relative;
     background: #eeeeee; }
+    @media only screen and (max-width: 46.875em) {
+      .series__friends, .series__stranger {
+        flex-direction: column;
+        align-items: center; } }
     .series__friends-text, .series__stranger-text {
       padding: 0rem;
       color: #3f3c3d;
@@ -169,17 +192,27 @@ a {
         .series__friends-text, .series__stranger-text {
           margin: 2rem 0;
           padding: 3rem; } }
+      @media only screen and (max-width: 46.875em) {
+        .series__friends-text, .series__stranger-text {
+          order: 2; } }
     .series__friends-image, .series__stranger-image {
       width: 40rem;
       height: 40rem;
       margin-left: auto;
-      background-image: url(../images/r1.jpg);
       background-repeat: no-repeat;
       background-size: cover; }
       @media only screen and (max-width: 56.25em) {
         .series__friends-image, .series__stranger-image {
           width: 30rem;
           height: 30rem; } }
+      @media only screen and (max-width: 46.875em) {
+        .series__friends-image, .series__stranger-image {
+          order: 1;
+          width: 100%;
+          height: 50rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .series__friends-image, .series__stranger-image {
+          height: 42rem; } }
     .series__friends::before, .series__stranger::before {
       content: "";
       position: absolute;
@@ -200,6 +233,9 @@ a {
         line-height: 2rem;
         font-size: 1rem;
         font-weight: 300; } }
+    @media only screen and (max-width: 37.5em) {
+      .series__paragraph {
+        margin-bottom: 1.5rem; } }
   .series__heading {
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -208,6 +244,9 @@ a {
       .series__heading {
         font-size: 2rem;
         letter-spacing: 2px; } }
+    @media only screen and (max-width: 37.5em) {
+      .series__heading {
+        margin-bottom: 1rem; } }
 
 .sports {
   background: #e0e0e0;
@@ -217,7 +256,7 @@ a {
     .sports {
       margin: 1.5rem;
       padding: 2.5rem; } }
-  .sports__cricket, .sports__footbal {
+  .sports__cricket, .sports__football {
     margin: 1rem 0;
     background: red;
     display: flex;
@@ -225,7 +264,11 @@ a {
     justify-content: flex-start;
     position: relative;
     background: #eeeeee; }
-    .sports__cricket-text, .sports__footbal-text {
+    @media only screen and (max-width: 46.875em) {
+      .sports__cricket, .sports__football {
+        flex-direction: column;
+        align-items: center; } }
+    .sports__cricket-text, .sports__football-text {
       padding: 0rem;
       color: #3f3c3d;
       flex: 1;
@@ -238,21 +281,31 @@ a {
       align-items: center;
       z-index: 2000; }
       @media only screen and (max-width: 56.25em) {
-        .sports__cricket-text, .sports__footbal-text {
+        .sports__cricket-text, .sports__football-text {
           margin: 2rem 0;
           padding: 3rem; } }
-    .sports__cricket-image, .sports__footbal-image {
+      @media only screen and (max-width: 46.875em) {
+        .sports__cricket-text, .sports__football-text {
+          order: 2; } }
+    .sports__cricket-image, .sports__football-image {
       width: 40rem;
       height: 40rem;
       margin-left: auto;
-      background-image: url(../images/r1.jpg);
       background-repeat: no-repeat;
       background-size: cover; }
       @media only screen and (max-width: 56.25em) {
-        .sports__cricket-image, .sports__footbal-image {
+        .sports__cricket-image, .sports__football-image {
           width: 30rem;
           height: 30rem; } }
-    .sports__cricket::before, .sports__footbal::before {
+      @media only screen and (max-width: 46.875em) {
+        .sports__cricket-image, .sports__football-image {
+          order: 1;
+          width: 100%;
+          height: 50rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .sports__cricket-image, .sports__football-image {
+          height: 42rem; } }
+    .sports__cricket::before, .sports__football::before {
       content: "";
       position: absolute;
       top: 0;
@@ -270,7 +323,11 @@ a {
       .sports__paragraph {
         padding: 0 3.2rem;
         line-height: 2rem;
-        font-size: 1rem; } }
+        font-size: 1rem;
+        font-weight: 300; } }
+    @media only screen and (max-width: 37.5em) {
+      .sports__paragraph {
+        margin-bottom: 1.5rem; } }
   .sports__heading {
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -279,6 +336,21 @@ a {
       .sports__heading {
         font-size: 2rem;
         letter-spacing: 2px; } }
+    @media only screen and (max-width: 37.5em) {
+      .sports__heading {
+        margin-bottom: 1rem; } }
+
+.friends {
+  background-image: url(../images/friends.jpg); }
+
+.cricket {
+  background-image: url(../images/strangerthings.jpg); }
+
+.stranger {
+  background-image: url(../images/strangerthings.jpg); }
+
+.football {
+  background-image: url(../images/football.jpg); }
 
 .footer {
   background: #00695c;
@@ -567,6 +639,10 @@ a {
     color: #004d40;
     letter-spacing: 1px;
     text-decoration: none; }
+    @media only screen and (max-width: 56.25em) {
+      .btn-round1, .btn-round1:visited, .btn-round1:link, .btn-startQuiz, .btn-startQuiz:visited, .btn-startQuiz:link {
+        font-size: 1rem;
+        padding: 1rem 1.5rem; } }
     .btn-round1:hover, .btn-round1:visited:hover, .btn-round1:link:hover, .btn-startQuiz:hover, .btn-startQuiz:visited:hover, .btn-startQuiz:link:hover {
       background: #004d40;
       color: #fff;
