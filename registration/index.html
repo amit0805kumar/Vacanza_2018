@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="author" content="Ankit Yadav">
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style1.css">
+     
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="css/responsive.css" />
+           <link rel="stylesheet" type="text/css"  href='css/clear.css' />
+        <link rel="stylesheet" type="text/css"  href='css/common.css' />
+        <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
+        <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />        
+        <link rel="stylesheet" type="text/css"  href='css/slick.css' />        
+        <link rel="stylesheet" type="text/css"  href='css/justifiedGallery.min.css' />
+        <link rel="stylesheet" type="text/css"  href='css/prettyPhoto.css' />
+        <link rel="stylesheet" type="text/css"  href='style.css' />
+     <link rel="stylesheet" type="text/css"  href='css/style.css' />
+     <link rel="stylesheet" type="text/css"  href='../css/style.css' />
+    
+    <style>
+    .checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+    </style>
+    
+    
+
+  
+</head>
+   
+
+<body>
+<div class="header-form">
+   <div class="nav" style="justify-content: flex-end;">
+            <div class="nav__content">
+
+                <input type="checkbox" class="nav__checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="nav__icon">
+                   <span class="nav__bar">&nbsp;</span>
+                </label>
+
+                <div class="nav__link-box nav__link-box-1">
+                    <a href="../index.html" class="nav__links">Home</a>
+                </div>
+                <div class="nav__link-box nav__link-box-2">
+                    <a href="../index.html#rounds" class="nav__links">Rounds</a>
+                </div>
+                <div class="nav__link-box nav__link-box-3">
+                    <a href="../quiz/quiz.html" class="nav__links">Quizzes</a>
+                </div>
+             <!--<div class="nav__link-box nav__link-box-4">
+                    <a href="#footer" class="nav__links">Contact Us</a>
+                </div>-->
+
+            </div>
+        </div>          
+    </div> 
+  
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form id="msform" action="reg.php" name="team_register" method="post" >
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Team Leader</li>
+                <li>Member 2</li>
+                <li>Member 3</li>
+                
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Team Leader Details</h2>
+                <h3 class="fs-subtitle">Tell us something about you</h3>
+
+                <input type="text" name="team_name" id="team_name" placeholder="Team Name"/>
+                <input type="text" name="mem1_name" id="mem1_name" placeholder="Name"/>
+               
+              <input type="email" name="mem1_email" id="mem1_email" placeholder="Email"/>
+                <input type="text" name="mem1_mobile" id="mem1_mobile" placeholder="Mobile No."/>
+                <input type="text" name="mem1_college" id="mem1_college" placeholder="College"/>
+                <select  style="border-radius:0; height:53px;" name="mem1_branch" id="mem1_branch" class="form-control">
+               	<option value="Default">Select your Branch</option>
+               	<option value="1">CSE</option>
+               	<option value="2">IT</option>
+               	<option value="3">ECE</option>
+               	<option value="4">ME</option>
+               	<option value="5">EN</option>
+               	<option value="6">CIVIL</option>
+                <option value="6">MBA/MCA</option>
+               </select>
+                <select  style="border-radius:0; height:53px;" name="mem1_year" id="mem1_year" class="form-control">
+               	<option value="Default">Select your Year</option>
+               	<option value="1">1</option>
+               	<option value="2">2</option>
+               	<option value="3">3</option>
+               	<option value="4">4</option>
+               
+               </select>
+                <input type="text" name="mem1_stdno" id="mem1_stdno" placeholder="Student No."/>
+            
+
+   
+                
+                 <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+           Click here to confirm details.
+          </label>
+        </div>
+               
+             
+
+               <input type="button" name="next"  class="next action-button" id="next" value="Next"/>
+                
+            </fieldset>
+        
+            <fieldset>
+                <h2 class="fs-title">Member 2 Deatils</h2>
+                <h3 class="fs-subtitle">Tell us about your Team Members</h3>
+                <input type="text" name="mem2_name" id="mem2_name" placeholder="Name"/>
+                <input type="email" name="mem2_email" id="mem2_email" placeholder="Email"/>
+                <input type="text" name="mem2_mobile" id="mem2_mobile" placeholder="Mobile No."/>
+                <input type="text" name="mem2_college" id="mem2_college" placeholder="College"/>
+             	 <select  style="border-radius:0; height:53px;" name="mem2_branch" id="mem2_branch" class="form-control">
+                <option value="Default">Select your Branch</option>
+               	<option value="1">CSE</option>
+               	<option value="2">IT</option>
+               	<option value="3">ECE</option>
+               	<option value="4">ME</option>
+               	<option value="5">EN</option>
+               	<option value="6">CIVIL</option>
+                <option value="6">MBA/MCA</option>
+               </select> 
+            <select  style="border-radius:0; height:53px;" name="mem2_year" id="mem2_year" class="form-control">
+               	<option value="Default">Select your Year</option>
+               	<option value="1">1</option>
+               	<option value="2">2</option>
+               	<option value="3">3</option>
+               	<option value="4">4</option>
+               
+               </select>
+          
+                <input type="text" name="mem2_stdno" id="mem2_stdno" placeholder="Student No."/>
+                 <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+           Click here to confirm details.
+          </label>
+        </div>
+                 <p style="color:red;">*Click on next only if you are registering for 3 members.</p>
+               
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                <input type="button" name="next" id="next2" onclick="mem3_valdation();" class="next action-button" value="Next"/>
+                <input type="submit" name="submit" id="sumbit2" class="action-button" value="Submit"/>
+                 
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Member 3 Details</h2>
+                <h3 class="fs-subtitle">Tell us more about your Team</h3>
+                <input type="text" name="mem3_name" id="mem3_name" placeholder="Name"/>
+                <input type="email" name="mem3_email" id="mem3_email" placeholder="Email"/>
+                <input type="text" name="mem3_mobile" id="mem3_mobile" placeholder="Mobile No."/>
+                <input type="text" name="mem3_college" id="mem3_college" placeholder="College"/>
+                 <select  style="border-radius:0; height:53px;" name="mem3_branch" id="mem3_branch" class="form-control">
+                <option value="Default">Select your Branch</option>
+               	<option value="1">CSE</option>
+               	<option value="2">IT</option>
+               	<option value="3">ECE</option>
+               	<option value="4">ME</option>
+               	<option value="5">EN</option>
+               	<option value="6">CIVIL</option>
+                <option value="6">MBA/MCA</option>
+               </select> 
+                <select  style="border-radius:0; height:53px;" name="mem3_year" id="mem3_year" class="form-control">
+               	<option value="Default">Select your Year</option>
+               	<option value="1">1</option>
+               	<option value="2">2</option>
+               	<option value="3">3</option>
+               	<option value="4">4</option>
+               
+               </select>
+                <input type="text" name="mem3_stdno" id="mem3_stdno" placeholder="Student No."/>
+                  <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+           Click here to confirm details.
+          </label>
+        </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+
+                <input type="submit" name="submit"  class="action-button" value="Submit"/>
+            </fieldset>
+        </form>
+        
+    </div>
+</div><br><br><br>
+    
+ 
+       
+<!-- /.MultiStep Form -->
+    <script  src="js/test.js"></script> 
+    
+     <script  src="js/index.js"></script>
+    
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    
+
+  
+
+   
+
+
+
+
+</body>
+
+</html>

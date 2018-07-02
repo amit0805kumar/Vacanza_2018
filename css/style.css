@@ -5,6 +5,9 @@
   padding: 0px;
   box-sizing: inherit; }
 
+ul {
+  list-style: none; }
+
 html {
   font-size: 62.5%;
   font-family: 'Roboto',sans-serif;
@@ -154,7 +157,7 @@ a {
   align-items: center; }
   @media only screen and (max-width: 37.5em) {
     .section-quiz {
-      padding: 3rem 7rem; } }
+      padding: 3rem 4rem; } }
 
 .series {
   background: #e0e0e0;
@@ -195,6 +198,9 @@ a {
       @media only screen and (max-width: 46.875em) {
         .series__friends-text, .series__stranger-text {
           order: 2; } }
+      @media only screen and (max-width: 37.5em) {
+        .series__friends-text, .series__stranger-text {
+          padding: 2rem; } }
     .series__friends-image, .series__stranger-image {
       width: 40rem;
       height: 40rem;
@@ -225,13 +231,16 @@ a {
       z-index: 1000; }
   .series__paragraph {
     padding: 0 4rem;
-    font-size: 1.5rem;
-    line-height: 2rem; }
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+    font-family: 'Nunito Sans', sans-serif; }
     @media only screen and (max-width: 56.25em) {
       .series__paragraph {
         padding: 0 3.2rem;
         line-height: 2rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 300; } }
     @media only screen and (max-width: 37.5em) {
       .series__paragraph {
@@ -287,6 +296,9 @@ a {
       @media only screen and (max-width: 46.875em) {
         .sports__cricket-text, .sports__football-text {
           order: 2; } }
+      @media only screen and (max-width: 37.5em) {
+        .sports__cricket-text, .sports__football-text {
+          padding: 2rem; } }
     .sports__cricket-image, .sports__football-image {
       width: 40rem;
       height: 40rem;
@@ -317,13 +329,16 @@ a {
       z-index: 1000; }
   .sports__paragraph {
     padding: 0 4rem;
-    font-size: 1.5rem;
-    line-height: 2rem; }
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+    font-family: 'Nunito Sans', sans-serif; }
     @media only screen and (max-width: 56.25em) {
       .sports__paragraph {
         padding: 0 3.2rem;
         line-height: 2rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 300; } }
     @media only screen and (max-width: 37.5em) {
       .sports__paragraph {
@@ -344,7 +359,7 @@ a {
   background-image: url(../images/friends.jpg); }
 
 .cricket {
-  background-image: url(../images/strangerthings.jpg); }
+  background-image: url(../images/cricket.jpg); }
 
 .stranger {
   background-image: url(../images/strangerthings.jpg); }
@@ -396,6 +411,15 @@ a {
   width: 100%;
   background: #eeeeee;
   padding: 5rem 8rem; }
+  @media only screen and (max-width: 56.25em) {
+    .rounds {
+      padding: 4.5rem 7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .rounds {
+      padding: 3rem 5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .rounds {
+      padding: 2.5rem 4rem; } }
 
 .popup {
   width: 100%;
@@ -413,7 +437,6 @@ a {
     visibility: visible; }
   .popup__container {
     max-width: 70rem;
-    height: 60rem;
     background: #fff;
     margin: 0 auto;
     margin-top: 4rem;
@@ -450,6 +473,41 @@ a {
     padding-left: 1rem;
     letter-spacing: 2px;
     align-items: center; }
+  .popup__text {
+    padding: 2rem; }
+
+.rules-heading {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 1rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .rules-heading {
+      margin: 0.8rem; } }
+.rules-para1, .rules-para2 {
+  font-size: 1.5rem;
+  margin: 1rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .rules-para1, .rules-para2 {
+      margin: 0.8rem 0;
+      font-size: 1rem; } }
+.rules-list {
+  font-size: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .rules-list {
+      font-size: 1rem; } }
+  .rules-list-item {
+    margin: 1rem 0; }
+    .rules-list-item::before {
+      content: "";
+      display: inline-block;
+      height: 1rem;
+      width: 1rem;
+      margin-right: .7rem;
+      background-image: url(../images/chevron-right.svg);
+      background-size: cover; }
+      @media only screen and (max-width: 37.5em) {
+        .rules-list-item::before {
+          margin-right: .5rem; } }
 
 .bg-video {
   display: block;
@@ -621,6 +679,14 @@ a {
       background-size: cover;
       opacity: 0.3; } }
 
+.round-list-heading {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 400; }
+  @media only screen and (max-width: 37.5em) {
+    .round-list-heading {
+      margin-top: 0.7rem; } }
+
 .btn {
   padding: 0.6rem 1rem;
   color: #fff;
@@ -651,6 +717,9 @@ a {
     .btn-round1:active, .btn-round1:visited:active, .btn-round1:link:active, .btn-startQuiz:active, .btn-startQuiz:visited:active, .btn-startQuiz:link:active {
       transform: translateY(2px);
       background: #00695c; }
+  @media only screen and (max-width: 37.5em) {
+    .btn-startQuiz, .btn-startQuiz:visited, .btn-startQuiz:link {
+      margin-bottom: 1rem; } }
   .btn-round1, .btn-round1:visited, .btn-round1:link {
     align-self: flex-start; }
   .btn:hover {

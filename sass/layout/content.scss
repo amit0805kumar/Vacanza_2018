@@ -3,4 +3,15 @@
     background: $color-grey-light-3;
     padding: 5rem 8rem;
       
+    @include respond(tab-port){
+        padding: 4.5rem 7rem;
+    }
+    
+    @include respond(phone){
+        padding: 3rem 5rem;
+    }
+    
+    @include respond(small){
+        padding: 2.5rem 4rem;
+    }
 }

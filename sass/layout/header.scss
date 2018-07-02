@@ -96,13 +96,13 @@
             width: 100%;
             height: 100%;
             transform: scale(1.1);
-            
+
             @include respond(small) {
 
                 border: 0.6rem solid $color-grey-dark-1;
             }
         }
-        
+
         box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
         @include respond(small) {
             padding: 1.5rem 4.5rem;
@@ -112,15 +112,15 @@
     &__heading {
         text-transform: uppercase;
         font-size: 6rem;
-        
-        @include respond(tab-port){
-             font-size: 5rem;
+
+        @include respond(tab-port) {
+            font-size: 5rem;
         }
-          @include respond(phone){
-             font-size: 4.5rem;
+        @include respond(phone) {
+            font-size: 4.5rem;
         }
-          @include respond(small){
-             font-size: 3.8rem;
+        @include respond(small) {
+            font-size: 3.8rem;
         }
     }
 
@@ -157,7 +157,7 @@
     padding: 3rem 10rem;
     align-items: center;
     @include respond(phone) {
-        padding: 3rem 7rem;
+        padding: 3rem 4rem;
     }
 
 }
@@ -206,12 +206,15 @@
             @include respond(phone-land) {
                 order: 2;
             }
+            @include respond(phone) {
+                padding: 2rem;
+            }
         }
         &-image {
             width: 40rem;
             height: 40rem;
             margin-left: auto;
-            
+
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -243,12 +246,15 @@
     }
     &__paragraph {
         padding: 0 4rem;
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 1.8rem;
+        line-height: 3.5rem;
+        font-weight: 300;
+        margin: 1.5rem 0;
+        font-family: 'Nunito Sans', sans-serif;
         @include respond(tab-port) {
             padding: 0 3.2rem;
             line-height: 2rem;
-            font-size: 1rem;
+            font-size: 1.5rem;
             font-weight: 300;
         }
         @include respond(phone) {
@@ -314,12 +320,15 @@
             @include respond(phone-land) {
                 order: 2;
             }
+            @include respond(phone) {
+                padding: 2rem;
+            }
         }
         &-image {
             width: 40rem;
             height: 40rem;
             margin-left: auto;
-          
+
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -355,12 +364,15 @@
     }
     &__paragraph {
         padding: 0 4rem;
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 1.8rem;
+        line-height: 3.5rem;
+        font-weight: 300;
+        margin: 1.5rem 0;
+        font-family: 'Nunito Sans', sans-serif;
         @include respond(tab-port) {
             padding: 0 3.2rem;
             line-height: 2rem;
-            font-size: 1rem;
+            font-size: 1.5rem;
             font-weight: 300;
         }
         @include respond(phone) {
@@ -381,18 +393,20 @@
         }
     }
 }
-.friends{
+
+.friends {
     background-image: url(../images/friends.jpg)
 }
-.cricket{
-    background-image: url(../images/strangerthings.jpg)
-    
+
+.cricket {
+    background-image: url(../images/cricket.jpg)
 }
-.stranger{
-    
+
+.stranger {
+
     background-image: url(../images/strangerthings.jpg)
 }
-.football{
+
+.football {
     background-image: url(../images/football.jpg)
-    
 }

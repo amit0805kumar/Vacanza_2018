@@ -6,19 +6,19 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2005;
-    opacity: 0;
-    visibility: hidden;
+    z-index: 2005; 
+      opacity: 0;
+      visibility: hidden;
     transition: all 0.3s;
 
     &:target {
         opacity: 1;
         visibility: visible;
     }
-   
+
     &__container {
         max-width: 70rem;
-        height: 60rem;
+       // height: 60rem;
         background: #fff;
         margin: 0 auto;
         margin-top: 4rem;
@@ -28,8 +28,8 @@
         position: relative;
         transform: scale(0.5);
         transition: all 0.3s ease-in-out;
-        
-        @include respond(phone){
+
+        @include respond(phone) {
             max-width: 55rem;
         }
     }
@@ -37,10 +37,10 @@
 
         width: 2rem;
         height: 2rem;
-        margin-left: auto; 
+        margin-left: auto;
         margin-right: 1rem;
     }
-     &:target &__container{
+    &:target &__container {
         transform: scale(1);
     }
 
@@ -65,5 +65,53 @@
         letter-spacing: 2px;
         align-items: center;
     }
-    &__text {}
+    &__text {
+        padding: 2rem;
+    }
+}
+
+.rules {
+    &-heading {
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 1rem 0;
+
+        @include respond(phone) {
+            margin: 0.8rem;
+        }
+    }
+    &-para1,
+    &-para2 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+       // display: none;
+        @include respond(phone) {
+            margin: 0.8rem 0;
+            font-size: 1rem;
+        }
+    }
+    &-list {
+        font-size: 1.5rem;
+
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+        &-item {
+            margin: 1rem 0;
+    //display: none;
+            &::before {
+                content: "";
+                display: inline-block;
+                height: 1rem;
+                width: 1rem;
+                margin-right: .7rem;
+                background-image: url(../images/chevron-right.svg);
+                background-size: cover;
+
+                @include respond(phone) {
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
 }
