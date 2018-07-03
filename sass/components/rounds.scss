@@ -39,7 +39,7 @@
         &-image {
             width: 100%;
             height: 100%;
-            background-image: url(../images/r1.jpg);
+            
             clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
             background-repeat: no-repeat;
             background-size: cover;
@@ -96,7 +96,7 @@
         &-image {
             width: 100%;
             height: 100%;
-            background-image: url(../images/r1.jpg);
+            
             clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
             background-repeat: no-repeat;
             background-size: cover;
@@ -126,7 +126,7 @@
         left: 0;
         
         @include respond(phone){
-       background-image:url(../images/r1.jpg);
+       background-image:url(../images/vintage.jpg);
             background-repeat:no-repeat;
             background-size:cover;
             opacity: 0.3;
@@ -144,7 +144,7 @@
         left: 0;
         
         @include respond(phone){
-       background-image:url(../images/r1.jpg);
+       background-image:url(../images/quiz.jpg);
             background-repeat:no-repeat;
             background-size:cover;
             opacity: 0.3;
@@ -162,7 +162,7 @@
         left: 0;
         
         @include respond(phone){
-       background-image:url(../images/r1.jpg);
+       background-image:url(../images/magic.jpg);
             background-repeat:no-repeat;
             background-size:cover;
             opacity: 0.3;
@@ -179,4 +179,13 @@
     @include respond(phone){
         margin-top: 0.7rem;
     }
+}
+.r1{
+    background-image: url(../images/vintage.jpg);
+}
+.r2{
+    background-image: url(../images/quiz.jpg);
+}
+.r3{
+    background-image: url(../images/magic.jpg);
 }

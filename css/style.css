@@ -33,6 +33,13 @@ a {
   height: 90vh;
   flex-direction: column;
   align-items: center; }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
   .header__logo-box {
     width: 22rem;
     height: 22rem;
@@ -44,9 +51,15 @@ a {
       transition: all 0.5s cubic-bezier(0.87, 0.03, 0.63, 0.6); }
       .header__logo-box-icon:hover {
         transform: scale(1.1) rotate(720deg); }
+      @media only screen and (max-height: 37.5em) {
+        .header__logo-box-icon {
+          transform: scale(0.8); } }
     @media only screen and (max-width: 75em) {
       .header__logo-box {
         margin-top: 13rem; } }
+    @media only screen and (max-height: 37.5em) {
+      .header__logo-box {
+        margin-top: 2rem; } }
   .header__text-logo {
         /*     
         font-size: 8rem;
@@ -80,6 +93,9 @@ a {
       .header__text-logo {
         margin: 4rem 0;
         width: 55%; } }
+    @media only screen and (max-height: 37.5em) {
+      .header__text-logo {
+        margin: 2rem 0; } }
     .header__text-logo:hover {
       cursor: pointer; }
   .header__buttons {
@@ -202,8 +218,8 @@ a {
         .series__friends-text, .series__stranger-text {
           padding: 2rem; } }
     .series__friends-image, .series__stranger-image {
-      width: 40rem;
-      height: 40rem;
+      width: 42rem;
+      height: 42rem;
       margin-left: auto;
       background-repeat: no-repeat;
       background-size: cover; }
@@ -227,7 +243,7 @@ a {
       width: 100%;
       height: 100%;
       border: 2px solid black;
-      transform: scale(0.9);
+      transform: scale(0.93);
       z-index: 1000; }
   .series__paragraph {
     padding: 0 4rem;
@@ -300,8 +316,8 @@ a {
         .sports__cricket-text, .sports__football-text {
           padding: 2rem; } }
     .sports__cricket-image, .sports__football-image {
-      width: 40rem;
-      height: 40rem;
+      width: 42rem;
+      height: 42rem;
       margin-left: auto;
       background-repeat: no-repeat;
       background-size: cover; }
@@ -325,7 +341,7 @@ a {
       width: 100%;
       height: 100%;
       border: 2px solid black;
-      transform: scale(0.9);
+      transform: scale(0.93);
       z-index: 1000; }
   .sports__paragraph {
     padding: 0 4rem;
@@ -570,7 +586,6 @@ a {
     .rounds__right-img-box-image {
       width: 100%;
       height: 100%;
-      background-image: url(../images/r1.jpg);
       clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
       background-repeat: no-repeat;
       background-size: cover;
@@ -621,7 +636,6 @@ a {
     .rounds__left-img-box-image {
       width: 100%;
       height: 100%;
-      background-image: url(../images/r1.jpg);
       clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
       background-repeat: no-repeat;
       background-size: cover;
@@ -646,7 +660,7 @@ a {
   left: 0; }
   @media only screen and (max-width: 37.5em) {
     .round-1-image::before {
-      background-image: url(../images/r1.jpg);
+      background-image: url(../images/vintage.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 0.3; } }
@@ -660,7 +674,7 @@ a {
   left: 0; }
   @media only screen and (max-width: 37.5em) {
     .round-2-image::before {
-      background-image: url(../images/r1.jpg);
+      background-image: url(../images/quiz.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 0.3; } }
@@ -674,7 +688,7 @@ a {
   left: 0; }
   @media only screen and (max-width: 37.5em) {
     .round-3-image::before {
-      background-image: url(../images/r1.jpg);
+      background-image: url(../images/magic.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 0.3; } }
@@ -686,6 +700,15 @@ a {
   @media only screen and (max-width: 37.5em) {
     .round-list-heading {
       margin-top: 0.7rem; } }
+
+.r1 {
+  background-image: url(../images/vintage.jpg); }
+
+.r2 {
+  background-image: url(../images/quiz.jpg); }
+
+.r3 {
+  background-image: url(../images/magic.jpg); }
 
 .btn {
   padding: 0.6rem 1rem;

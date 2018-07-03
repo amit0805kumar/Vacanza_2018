@@ -14,7 +14,20 @@ ul{
 //Media query Manager
 
 @mixin respond($breakpoint) {
-  
+    
+      @if $breakpoint==height-phone {
+        @media only screen and (max-height: 37.5em) {  //600px
+            @content
+        }
+    }
+    
+         @if $breakpoint==height-phone-small {
+        @media only screen and (max-height: 37.5em) {  //600px
+            @content
+        }
+    }
+    
+    
        @if $breakpoint==small {
         @media only screen and (max-width: 31.25em) {  //500px
             @content
