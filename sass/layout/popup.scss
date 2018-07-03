@@ -129,7 +129,7 @@
         max-width: 70rem; // height: 60rem;
         background: #fff;
         margin: 0 auto;
-        margin-top: 4rem;
+       margin-top:20rem;
         overflow: hidden;
         position: relative;
         border-radius: 4px;
@@ -139,6 +139,7 @@
 
         @include respond(phone) {
             max-width: 55rem;
+            margin-top: 10rem;
         }
     }
     

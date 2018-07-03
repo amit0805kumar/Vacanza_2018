@@ -539,7 +539,7 @@ a {
     max-width: 70rem;
     background: #fff;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 20rem;
     overflow: hidden;
     position: relative;
     border-radius: 4px;
@@ -548,7 +548,8 @@ a {
     transition: all 0.3s ease-in-out; }
     @media only screen and (max-width: 37.5em) {
       .popup-quiz__container {
-        max-width: 55rem; } }
+        max-width: 55rem;
+        margin-top: 10rem; } }
   .popup-quiz__text {
     padding: 2rem; }
   .popup-quiz .rules-icon {
@@ -621,6 +622,9 @@ a {
     font-size: 2.2rem;
     color: #3f3c3d;
     font-weight: 400; }
+    @media only screen and (max-width: 37.5em) {
+      .rounds__right-heading {
+        color: #fff; } }
   .rounds__right-paragraph {
     color: #737272;
     font-size: 1.8rem;
@@ -628,7 +632,7 @@ a {
     line-height: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .rounds__right-paragraph {
-        color: black; } }
+        color: #fff; } }
   .rounds__right-img-box {
     flex: 0 1 50%;
     overflow: hidden; }
@@ -637,8 +641,7 @@ a {
       height: 100%;
       clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
       background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.7; }
+      background-size: cover; }
       @media only screen and (max-width: 56.25em) {
         .rounds__right-img-box-image {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
@@ -671,6 +674,9 @@ a {
     font-size: 2.2rem;
     color: #3f3c3d;
     font-weight: 400; }
+    @media only screen and (max-width: 37.5em) {
+      .rounds__left-heading {
+        color: #fff; } }
   .rounds__left-paragraph {
     color: #737272;
     font-size: 1.8rem;
@@ -678,7 +684,7 @@ a {
     line-height: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .rounds__left-paragraph {
-        color: black; } }
+        color: #fff; } }
   .rounds__left-img-box {
     flex: 0 1 50%;
     overflow: hidden; }
@@ -687,8 +693,7 @@ a {
       height: 100%;
       clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
       background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.7; }
+      background-size: cover; }
       @media only screen and (max-width: 56.25em) {
         .rounds__left-img-box-image {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
@@ -709,10 +714,9 @@ a {
   left: 0; }
   @media only screen and (max-width: 37.5em) {
     .round-1-image::before {
-      background-image: url(../images/vintage.jpg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/vintage.jpg);
       background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.3; } }
+      background-size: cover; } }
 .round-2-image::before {
   content: "";
   width: 100%;
@@ -723,10 +727,9 @@ a {
   left: 0; }
   @media only screen and (max-width: 37.5em) {
     .round-2-image::before {
-      background-image: url(../images/quiz.jpg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/quiz.jpg);
       background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.3; } }
+      background-size: cover; } }
 .round-3-image::before {
   content: "";
   width: 100%;
@@ -737,10 +740,9 @@ a {
   left: 0; }
   @media only screen and (max-width: 37.5em) {
     .round-3-image::before {
-      background-image: url(../images/magic.jpg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/magic.jpg);
       background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.3; } }
+      background-size: cover; } }
 
 .round-list-heading {
   margin-top: 1rem;
@@ -766,7 +768,6 @@ a {
   display: inline-block;
   transition: all 0.3s; }
   .btn-round1, .btn-round1:visited, .btn-round1:link, .btn-startQuiz, .btn-startQuiz:visited, .btn-startQuiz:link {
-    background: #525050;
     border-radius: 3px;
     font-size: 1.5rem;
     font-weight: 400;
@@ -781,11 +782,18 @@ a {
       .btn-round1, .btn-round1:visited, .btn-round1:link, .btn-startQuiz, .btn-startQuiz:visited, .btn-startQuiz:link {
         font-size: 1rem;
         padding: 1rem 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .btn-round1, .btn-round1:visited, .btn-round1:link, .btn-startQuiz, .btn-startQuiz:visited, .btn-startQuiz:link {
+        color: #fff;
+        border: 1px solid #fff; } }
     .btn-round1:hover, .btn-round1:visited:hover, .btn-round1:link:hover, .btn-startQuiz:hover, .btn-startQuiz:visited:hover, .btn-startQuiz:link:hover {
       background: #004d40;
       color: #fff;
       transform: translateY(-2px);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
+      @media only screen and (max-width: 37.5em) {
+        .btn-round1:hover, .btn-round1:visited:hover, .btn-round1:link:hover, .btn-startQuiz:hover, .btn-startQuiz:visited:hover, .btn-startQuiz:link:hover {
+          background: transparent; } }
     .btn-round1:active, .btn-round1:visited:active, .btn-round1:link:active, .btn-startQuiz:active, .btn-startQuiz:visited:active, .btn-startQuiz:link:active {
       transform: translateY(2px);
       background: #00695c; }

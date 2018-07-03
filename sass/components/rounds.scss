@@ -23,6 +23,10 @@
         font-size: 2.2rem; //  margin-bottom: 1rem;
         color: $color-grey-dark-1;
         font-weight: 400;
+        
+        @include respond(phone){
+            color: #fff;
+        }
     }
     &-paragraph {
         color: $color-grey-dark-3;
@@ -30,7 +34,7 @@
         font-weight: 300;
         line-height: 3rem;
         @include respond(phone) {
-         color: black;
+         color: #fff;
         }
     }
     &-img-box {
@@ -43,7 +47,6 @@
             clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
             background-repeat: no-repeat;
             background-size: cover;
-            opacity: 0.7;
             @include respond(tab-port) {
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             }
@@ -80,15 +83,20 @@
         font-size: 2.2rem;
         color: $color-grey-dark-1;
         font-weight: 400;
+        
+        @include respond(phone){
+            color: #fff;
+        }
     }
     &-paragraph {
         color: $color-grey-dark-3;
         font-size: 1.8rem;
         font-weight: 300;
         line-height: 3rem;
-        @include respond(phone) {
-         color: black;
+        @include respond(phone){
+            color: #fff;
         }
+      
     }
     &-img-box {
         flex: 0 1 50%;
@@ -100,7 +108,6 @@
             clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
             background-repeat: no-repeat;
             background-size: cover;
-            opacity: 0.7;
             @include respond(tab-port) {
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             }
@@ -126,10 +133,10 @@
         left: 0;
         
         @include respond(phone){
-       background-image:url(../images/vintage.jpg);
+       background-image:linear-gradient(to right,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../images/vintage.jpg);
             background-repeat:no-repeat;
             background-size:cover;
-            opacity: 0.3;
+            
         }
     }
     }
@@ -144,10 +151,10 @@
         left: 0;
         
         @include respond(phone){
-       background-image:url(../images/quiz.jpg);
+       background-image:linear-gradient(to right,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../images/quiz.jpg);
             background-repeat:no-repeat;
             background-size:cover;
-            opacity: 0.3;
+           
         }
     }
     }
@@ -162,10 +169,10 @@
         left: 0;
         
         @include respond(phone){
-       background-image:url(../images/magic.jpg);
+       background-image:linear-gradient(to right,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../images/magic.jpg);
             background-repeat:no-repeat;
             background-size:cover;
-            opacity: 0.3;
+           
         }
     }
     }
