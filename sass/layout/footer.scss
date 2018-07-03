@@ -29,7 +29,7 @@
         height: 100%;
         background-blend-mode: color;
         background-size: cover;  
-        background-image:linear-gradient(to right,$color-primary,$color-primary),url(../images/footer.png);
+        background-image:linear-gradient(to bottom,$color-primary,$color-primary),url(../images/footer.png);
         position: absolute;
         animation: scaler 20s infinite;
     }
