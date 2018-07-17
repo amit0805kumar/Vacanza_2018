@@ -534,6 +534,7 @@ a {
   left: 0;
   z-index: 2005;
   opacity: 1;
+  visibility: hidden;
   transition: all 0.3s; }
   .popup-quiz__container {
     max-width: 70rem;
@@ -799,7 +800,12 @@ a {
       background: #00695c; }
   @media only screen and (max-width: 37.5em) {
     .btn-startQuiz, .btn-startQuiz:visited, .btn-startQuiz:link {
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem;
+      border: 1px solid #004d40;
+      color: #004d40; } }
+  @media only screen and (max-width: 37.5em) {
+    .btn-startQuiz:hover, .btn-startQuiz:visited:hover, .btn-startQuiz:link:hover {
+      background: #004d40; } }
   .btn-round1, .btn-round1:visited, .btn-round1:link {
     align-self: flex-start; }
   .btn:hover {
